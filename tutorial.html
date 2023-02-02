@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial para gerar guia INSS</title>
+    <style>
+        :root{
+            --cor1: #03001C;
+            --cor2: #301E67;
+            --cor3: #5B8FB9;
+            --cor4: #B6EADA;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: var(--cor2);
+        }
+
+        header, main, footer{
+            color: var(--cor4);
+
+            width: 96%;
+            margin: 10px auto;
+            max-width: 1280px;
+            min-width: 280px;
+        }
+            header{
+                background-color: var(--cor1);
+                border-radius: 20px;
+            }
+            main{
+                background-color: var(--cor1);
+                border-radius: 20px;
+            }
+            footer{
+                background-color: var(--cor);
+                width: 100%;
+            }
+
+            section{
+                width: 90%;
+                margin: 0 auto;
+                padding: 10px 0;
+            }
+
+        h1, h2{
+            margin: 10px 0;
+            padding: .5em 0;
+        }
+            h1{
+                font-size: 2.5em;
+            }
+            h2{
+                font-size: 18px;
+            }
+            p{
+                line-height: 30px;
+                padding: 10px 0;
+            }
+            h5, h6{
+                display: flex;
+                justify-content: center;
+            }
+
+        .btn-ext{
+            color: aqua;
+            font-weight: 700;
+            text-align: center;
+
+            border: 2px solid var(--cor3);
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            
+            display: flex;
+            width: fit-content;
+            max-width: 200px;
+
+        }
+            .btn-ext:hover{
+                color: antiquewhite;
+                font-style: oblique;
+                border: 2px solid white;
+            }
+
+        .tb-box{
+            max-width: 600px;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+            tr, th, td{
+                border: 1px solid var(--cor3);
+                padding: 10px;
+                margin: 0 auto;
+            }
+
+        img{
+            width: 100%;
+            max-width: 600px;
+            margin: 10px 0;
+        }
+
+        .icon-ctt{
+            width: 50px;
+            display: flex;
+        }
+
+        figure{
+            padding: 10px;
+            border: 1px solid var(--cor3);
+            width: fit-content;
+            box-sizing: border-box;
+            max-width: 600px;
+        }
+
+        figcaption{
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Tutorial simplificado para gerar guia INSS</h1>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Acessar o site da receita federal <a class="btn-ext" href="http://sal.receita.fazenda.gov.br/PortalSalInternet/faces/pages/index.xhtml" target="_blank">SAL</a></h2>
+            <h2>2. Feito isso, selecione o módulo</h2>
+        </section>
+
+        <section>
+            <table class="tb-box">
+                <thead>
+                    <tr>
+                        <th>
+                            Segurado
+                        </th>
+                        <th>
+                            Categoria no SAL
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Contribuinte que exerce trabalho remunerado sem vinculo ou registro</td>
+                        <td>Contribuinte individual (Autônomo)</td>
+                    </tr>
+                    <tr>
+                        <td>Trabalho domestico com frequencia acima de 2 dias por semana</td>
+                        <td>Doméstico (neste caso, quem realiza a contribuição é o empregador)</td>
+                    </tr>
+                    <tr>
+                        <td>Desempregado, estudante ou pessoa que não realiza atividade remunerada</td>
+                        <td style="color: bisque;">Facultativo</td>
+                    </tr>
+                    <tr>
+                        <td>Trabalhador rural/segurado especial que deseja complementar a contribuição obrigatória</td>
+                        <td>Segurado especial</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>3. Preencha com seu NIT/PIS/PASEP</h2>
+            <figure><img src="https://i.ibb.co/v45P8xP/tela-2.png" alt=""><figcaption>Selecionado Facultativo</figcaption></figure>
+            <p>Confirme seus dados antes de prosseguir!</p>
+            <figure><img src="https://i.ibb.co/BrthYMc/tela-3.png" alt=""><figcaption>Confira os dados obtidos pelo NIT informado.</figcaption></figure>
+
+            <h2>4. Preencha os dados corretamente:</h2>
+
+            <table class="tb-box">
+                <tbody>
+                    <tr>
+                        <td>Competencia</td>
+                        <td>Corresponde ao mês que você está preenchendo a guia. A partir dessa data, você tem até o dia 15 do mês seguinte para pagar.</td>
+                    </tr>
+                    <tr>
+                        <td>Salário de Contribuição</td>
+                        <td>é o valor que a alíquota será descontada. Cada categoria de segurado tem valores específicos que pode pagar o INSS. <a class="btn-ext" href="https://ingracio.adv.br/quanto-pagar-de-inss-20-11-5/" target="_blank">Saiba mais aqui!</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <img src="https://i.ibb.co/Fz8KLkD/tela-4.png" alt=""><figcaption>Exemplo baseado no salario minimo de 2023 - R$ 1302,00</figcaption>
+            </figure> 
+
+            <p>Agora preenchido, clique em "confirmar".</p>
+            
+
+            <figure><img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_522,h_630/https://ingracio.adv.br/wp-content/uploads/2023/01/info-7-522x630.png" alt=""><figcaption>Tabela de referencia</figcaption></figure>
+            
+            
+        </section>
+
+        <section>
+            <h2>5. Gerando a guia!</h2>
+            <p>Selecione uma guia por vez, então clique em gerar, conforme exemplo:</p>
+            <figure>
+                <img src="https://i.ibb.co/G2GQVdX/tela-5.png" alt="">
+                <figcaption>Caso selecione todas, virá apenas um boleto para pagamento unico.</figcaption>
+            </figure>
+            <p>Salve-as como PDF e pague em dia.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <h5>Claudinei Lopes / 2023.</h5>
+            <h6><a href="mailto:kakalp.dev@gmail.com"><img class="icon-ctt" src="https://img.icons8.com/color/48/null/gmail--v1.png" alt=""></a>
+            <a href="https://github.com/kakalpdev"><img class="icon-ctt" src="https://img.icons8.com/glyph-neue/64/null/github.png" alt=""></a></h6>
+        </section>
+    </footer>
+    
+</body>
+</html>
